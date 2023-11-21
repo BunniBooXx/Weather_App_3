@@ -9,6 +9,7 @@ import snow_icon from "./Assets/snow.png";
 import wind_icon from "./Assets/wind.png";
 import humidity_icon from "./Assets/humidity.png";
 
+
 const Weather = () => {
 
   let [wicon,setWicon] = useState(cloud_icon)
@@ -44,6 +45,7 @@ const Weather = () => {
   };
 
   return (
+    <div>
     <div className="container">
       <div className="top-bar">
         <input type="text" className="cityInput" placeholder="Search" />
@@ -73,6 +75,7 @@ const Weather = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
